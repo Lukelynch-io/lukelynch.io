@@ -4,13 +4,138 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="/src/styles/index.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Luke Lynch</title>
 </head>
 
 <body>
-  <h1>Welcome to lukelynch.io - Currently under construction</h1>
+  <h1>Luke Lynch</h1>
+  <section>
+    <header>
+      <h2>Software Engineer</h2>
+      <p>I'm a software engineer who's constantly curious about the best practices to make reliable, maintainable code
+      </p>
+    </header>
+  </section>
+  <section id="projects-section">
+    <h2>Side-projects</h2>
+    <div>
+      <h3>gomakemkv</h3>
+      <p>Small library to help parsing all robot commands from the makemkv console</p>
+      <a href="https://github.com/DrWalrus1/gomakemkv">
+        <img src="public/github-mark/github-mark-white.svg" alt="Github Icon" class="github-link-icon" width="20px"
+          height="20px" />
+      </a>
+    </div>
+  </section>
+  <section id="blog-section">
+    <h2>Blog Posts</h2>
+    <article class="blog-post">
+      <h3>First Blog Post</h3>
+      <p>Contents</p>
+    </article>
+  </section>
+  <section id="book-recommendation-section">
+    <article>
+      <h2>Book Recommendations</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Book Title</th>
+            <th>Subjects Covered</th>
+            <th>My Favourite bits</th>
+            <th>Buy link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Working Effectively with Legacy Code
+            <td>
+              <ul>
+                <li>What legacy code actually is</li>
+                <li>How to properly approach legacy code</li>
+              </ul>
+            </td>
+            <td>
+              <p>Spoke to me with most workplaces and shows how legacy code happens, and how to address it safely and
+                confidently</p>
+            </td>
+            <td><a href="https://example.com">example.com</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+  </section>
+  <section id="contact-me-section">
+    <h2>Get in touch</h2>
+    <form id="contact-me-form">
+      <input type="email" placeholder="Your email" />
+      <br>
+      <textarea type="text" placeholder="email contents" rows="9" style="width:90%"></textarea>
+      <br>
+      <button type="submit">Send</button>
+    </form>
+    <br>
+    <br>
+    <footer>
+      <img src="public/github-mark/github-mark-white.svg" alt="Github Icon" class="github-link-icon" width="20px"
+        height="20px" />
+      <a href="https://github.com/DrWalrus1">Github</a>
+    </footer>
 </body>
+
+<style>
+  :root {
+    --tokyo-night-bg: #1a1b26;
+    --tokyo-night-keyword: #bb9af7;
+    --tokyo-night-keyword-secondary: #69c5b8;
+    --tokyo-night-number: #ff9d65;
+    --tokyo-night-number-dark: #b37659;
+    --tokyo-night-hover: #a06040;
+
+  }
+
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--tokyo-night-bg);
+    color: white;
+  }
+
+  a:link {
+    color: var(--tokyo-night-number);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: var(--tokyo-night-number-dark);
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--tokyo-night-hover);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  body h1 {
+    color: var(--tokyo-night-keyword);
+  }
+
+  body h2,
+  body h3,
+  body h4,
+  body h5,
+  body h6 {
+    color: var(--tokyo-night-keyword-secondary)
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid var(--tokyo-night-keyword-secondary);
+  }
+</style>
 
 </html>
